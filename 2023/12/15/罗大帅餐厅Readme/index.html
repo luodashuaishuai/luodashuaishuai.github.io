@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>罗大帅餐厅Readme | 罗小帅的blog</title><meta name="author" content="LuoDashuai"><meta name="copyright" content="LuoDashuai"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Mapper和Service 在软件开发中，通常将应用程序的不同层进行分离，以便实现更好的代码组织和职责分离。通常将应用程序分为三个主要层：表示层、业务逻辑层和数据访问层。其中，业务逻辑层通常又可以分为 Service 层和 Mapper 层。 Mapper 层是数据访问层的一部分，负责将数据从数据库中提取出来并转换成 Java 对象，或将 Java 对象转换为数据库中的数据。Mapper 层的主">
+<meta property="og:type" content="article">
+<meta property="og:title" content="罗大帅餐厅Readme">
+<meta property="og:url" content="http://example.com/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/index.html">
+<meta property="og:site_name" content="罗小帅的blog">
+<meta property="og:description" content="Mapper和Service 在软件开发中，通常将应用程序的不同层进行分离，以便实现更好的代码组织和职责分离。通常将应用程序分为三个主要层：表示层、业务逻辑层和数据访问层。其中，业务逻辑层通常又可以分为 Service 层和 Mapper 层。 Mapper 层是数据访问层的一部分，负责将数据从数据库中提取出来并转换成 Java 对象，或将 Java 对象转换为数据库中的数据。Mapper 层的主">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/hh.jpg">
+<meta property="article:published_time" content="2023-12-15T13:39:29.000Z">
+<meta property="article:modified_time" content="2024-03-25T13:30:08.799Z">
+<meta property="article:author" content="LuoDashuai">
+<meta property="article:tag" content="实验">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/hh.jpg"><link rel="shortcut icon" href="/img/666.jpg"><link rel="canonical" href="http://example.com/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '罗大帅餐厅Readme',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-25 21:30:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="罗小帅的blog" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/666.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-poo"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/photos/films/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/hh.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="罗小帅的blog"><span class="site-name">罗小帅的blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-poo"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/photos/films/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">罗大帅餐厅Readme</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-15T13:39:29.000Z" title="发表于 2023-12-15 21:39:29">2023-12-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-25T13:30:08.799Z" title="更新于 2024-03-25 21:30:08">2024-03-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="罗大帅餐厅Readme"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Mapper和Service</p>
+<p>在软件开发中，通常将应用程序的不同层进行分离，以便实现更好的代码组织和职责分离。通常将应用程序分为三个主要层：表示层、业务逻辑层和数据访问层。其中，业务逻辑层通常又可以分为 Service 层和 Mapper 层。</p>
+<p>Mapper 层是数据访问层的一部分，负责将数据从数据库中提取出来并转换成 Java 对象，或将 Java 对象转换为数据库中的数据。<br>Mapper 层的主要职责是提供数据访问接口，将数据库操作和 Java 对象之间的转换封装起来，使 Service 层无需直接与数据库打交道。</p>
+<p>Service 层是应用程序中的业务逻辑层，主要负责处理业务逻辑，对外提供服务接口。<br>Service 层通常会调用 Mapper 层提供的数据访问接口，将数据转换为业务对象，并进行业务处理。Service 层的主要职责是对外提供服务接口，将数据操作和业务逻辑分离开来，使得业务逻辑更加清晰明了，易于维护和扩展。</p>
+<p>在实际的应用中，Mapper 层和 Service 层的职责界限可能会有所重叠，具体的实现方式也可能因应用的不同而异。但总的来说，Mapper 层主要处理数据访问和转换的问题，而 Service 层主要处理业务逻辑的问题。</p>
+<p><img src="https://s2.loli.net/2023/12/15/uzb8ZY4iMeUftPH.png" alt="3ee8ad7230548d9c3e7d8d4e2a4f9a9.png"></p>
+<p><img src="https://s2.loli.net/2023/12/15/2iNUWQVOY1nkjMh.png" alt="c5c8b3147db74a076f66e7203c77e27.png"></p>
+<p><img src="https://s2.loli.net/2023/12/15/OTnJCSLzKG5i2b4.png" alt="c8257c0c2a40f329ce3f0406ab71f70.png"></p>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="餐厅后端管理"><a href="#餐厅后端管理" class="headerlink" title="餐厅后端管理"></a>餐厅后端管理</h3><h4 id="1、登录"><a href="#1、登录" class="headerlink" title="1、登录"></a>1、登录</h4><p><img src="https://s2.loli.net/2023/12/15/dsTFAGmQBq31ieL.png" alt="53e10e4b4652dfac7a0bc5e20bbfd6d.png"></p>
+<p><strong>实体</strong>（Employee.java)映射数据库表的实体类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">status = <span class="number">0</span>/<span class="number">1</span> <span class="comment">//表示不在职和在职</span></span><br></pre></td></tr></table></figure>
+<p><strong>前端</strong>界面（backend/page/login/login.html)通过将输入内容</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">prop</span>=<span class="string">&quot;username&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">el-input</span> <span class="attr">v-model</span>=<span class="string">&quot;loginForm.username&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">auto-complete</span>=<span class="string">&quot;off&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;账号&quot;</span></span></span><br><span class="line"><span class="tag">                              <span class="attr">maxlength</span>=<span class="string">&quot;20&quot;</span></span></span><br><span class="line"><span class="tag">                              <span class="attr">prefix-icon</span>=<span class="string">&quot;iconfont icon-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">el-form-item</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">prop</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">el-input</span> <span class="attr">v-model</span>=<span class="string">&quot;loginForm.password&quot;</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;密码&quot;</span></span></span><br><span class="line"><span class="tag">                              <span class="attr">prefix-icon</span>=<span class="string">&quot;iconfont icon-lock&quot;</span> <span class="attr">maxlength</span>=<span class="string">&quot;20&quot;</span></span></span><br><span class="line"><span class="tag">                              @<span class="attr">keyup.enter.native</span>=<span class="string">&quot;handleLogin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>向后端发送一个http请求，并将“password”和“username”以Json格式传入</p>
+<p><strong>Mapper</strong>层（EmployeeMapper)已经设置了接口对于数据库的操作</p>
+<p><strong>controller</strong> 层（EmployeeController.java)具体对于前端传来的“password”和“username”进行一系列操作（调用Service再调用mapper进行数据库操作）</p>
+<p>1、先将传输进来的密码进行MD5，加密（因为数据库中存储的密码格式为MD4加密的格式）</p>
+<p>2、对于传输进来的用户名，调用MyBatis-Plus方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">LambdaQueryWrapper&lt;Employee&gt; queryWrapper = <span class="keyword">new</span> <span class="title class_">LambdaQueryWrapper</span>&lt;&gt;(); <span class="comment">// LambdaQueryWrapper是Mybatis-Plus提供的一个查询条件构造器</span></span><br><span class="line">        queryWrapper.eq(Employee::getUsername, employee.getUsername()); <span class="comment">// 相当于sql语句中的where部分，设置接下来getOne查询的范围，即数据库的username = 前台获取的username</span></span><br><span class="line">        <span class="type">Employee</span> <span class="variable">emp</span> <span class="operator">=</span> employeeService.getOne(queryWrapper); </span><br></pre></td></tr></table></figure>
+<p>传入对象emp中，然后将此数据库中密码取出与输入密码相比较看是否相同</p>
+<p>登陆成功后就把ID和此对象传入<strong>Session</strong>中，在后续的请求中，如果需要验证用户的登录状态，可以通过读取 Session 中的员工 ID 来判断用户是否已经登录。</p>
+<h4 id="2、登出"><a href="#2、登出" class="headerlink" title="2、登出"></a>2、登出</h4><p>清空<strong>Session</strong>中内容</p>
+<h4 id="3、员工管理（增加，删除，状态修改）"><a href="#3、员工管理（增加，删除，状态修改）" class="headerlink" title="3、员工管理（增加，删除，状态修改）"></a>3、员工管理（增加，删除，状态修改）</h4><p><strong>界面</strong>（backend/page/member/add.html   list.html)当admin登陆时显示“禁用选项”，普通用户不显示</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-button</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">type</span>=<span class="string">&quot;text&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">size</span>=<span class="string">&quot;small&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">class</span>=<span class="string">&quot;delBut non&quot;</span></span></span><br><span class="line"><span class="tag">                            @<span class="attr">click</span>=<span class="string">&quot;statusHandle(scope.row)&quot;</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">v-if</span>=<span class="string">&quot;user === &#x27;admin&#x27;&quot;</span></span></span><br><span class="line"><span class="tag">                    &gt;</span></span><br><span class="line">                        &#123;&#123; scope.row.status == &#x27;1&#x27; ? &#x27;禁用&#x27; : &#x27;启用&#x27; &#125;&#125;</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>增加</strong>输入账号等信息，默认密码设置为身份证后六位（EmployedController.java）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> employee.getIdNumber().substring(employee.getIdNumber().length() - <span class="number">6</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>由于使用了mybatis-plus，在employeeService中继承了IService接口</strong>可以使用save方法</p>
+<p>然后<strong>分页构造器</strong>输出，在前端演示</p>
+<h4 id="4、管理菜单"><a href="#4、管理菜单" class="headerlink" title="4、管理菜单"></a>4、管理菜单</h4><p><strong>新增菜品</strong></p>
+<p>重点，<strong>菜品图片上传/下载</strong></p>
+<p><strong>controller</strong>（CommonController.java）中编写了upload方法以及download方法,trycatch捕获异常处理</p>
+<p><strong>upload</strong>方法是将上传的文件（file）发送给服务器以便其他浏览器或用户在使用时能直接download使用</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 获取原始文件名</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">originalFilename</span> <span class="operator">=</span> file.getOriginalFilename();</span><br><span class="line">        <span class="comment">// 获取文件后缀</span></span><br><span class="line">        <span class="keyword">assert</span> originalFilename != <span class="literal">null</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">suffix</span> <span class="operator">=</span> originalFilename.substring(originalFilename.lastIndexOf(<span class="string">&quot;.&quot;</span>));</span><br><span class="line">        <span class="comment">// 使用UUID生成文件名</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">fileName</span> <span class="operator">=</span> UUID.randomUUID() + suffix;</span><br><span class="line">        <span class="comment">// 创建一个目录，判断是否存在，不存在则创建</span></span><br><span class="line">        <span class="type">File</span> <span class="variable">dir</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(basePath);</span><br><span class="line">        <span class="keyword">if</span> (!dir.exists()) &#123;</span><br><span class="line">            dir.mkdirs();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            file.transferTo(<span class="keyword">new</span> <span class="title class_">File</span>(basePath + fileName)); <span class="comment">// 将文件转存到指定目录</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>download</strong>是<em>服务端将文件以流的形式写回浏览器的过程</em></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">FileInputStream</span> <span class="variable">fileInputStream</span> <span class="operator">=</span> <span class="literal">null</span>;     <span class="comment">// 文件输入流</span></span><br><span class="line">        <span class="type">ServletOutputStream</span> <span class="variable">outputStream</span> <span class="operator">=</span> <span class="literal">null</span>;    <span class="comment">// 输出流</span></span><br></pre></td></tr></table></figure>
+<p><strong>前端界面</strong>（backend/page/food/add.html)</p>
+<p>运用了</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">created</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="comment">// 获取菜品分类的信息</span></span><br><span class="line">            <span class="variable language_">this</span>.<span class="title function_">getDishList</span>()</span><br><span class="line">            <span class="comment">// 口味临时数据</span></span><br><span class="line">            <span class="variable language_">this</span>.<span class="title function_">getFlavorListHand</span>()</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">id</span> = <span class="title function_">requestUrlParam</span>(<span class="string">&#x27;id&#x27;</span>)</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">actionType</span> = <span class="variable language_">this</span>.<span class="property">id</span> ? <span class="string">&#x27;edit&#x27;</span> : <span class="string">&#x27;add&#x27;</span></span><br><span class="line">            <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">id</span>) &#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="title function_">init</span>()</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
+<p>导入了口味分类信息列表</p>
+<p>先调用前端的Submit方法对数据初处理</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">submitForm</span>(<span class="params">formName, st</span>) &#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">$refs</span>[formName].<span class="title function_">validate</span>(<span class="function">(<span class="params">valid</span>) =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (valid) &#123;</span><br><span class="line">                        <span class="keyword">let</span> params = &#123;...<span class="variable language_">this</span>.<span class="property">ruleForm</span>&#125;</span><br><span class="line">                        <span class="comment">// params.flavors = this.dishFlavors</span></span><br><span class="line">                        params.<span class="property">status</span> = <span class="variable language_">this</span>.<span class="property">ruleForm</span> ? <span class="number">1</span> : <span class="number">0</span></span><br><span class="line">                        params.<span class="property">price</span> *= <span class="number">100</span></span><br><span class="line">                        params.<span class="property">categoryId</span> = <span class="variable language_">this</span>.<span class="property">ruleForm</span>.<span class="property">categoryId</span></span><br><span class="line">                        params.<span class="property">flavors</span> = <span class="variable language_">this</span>.<span class="property">dishFlavors</span>.<span class="title function_">map</span>(<span class="function"><span class="params">obj</span> =&gt;</span> (&#123;...obj, <span class="attr">value</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(obj.<span class="property">value</span>)&#125;))</span><br><span class="line">                        <span class="keyword">delete</span> params.<span class="property">dishFlavors</span></span><br><span class="line">                        <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="property">imageUrl</span>) &#123;</span><br><span class="line">                            <span class="variable language_">this</span>.<span class="property">$message</span>.<span class="title function_">error</span>(<span class="string">&#x27;请上传菜品图片&#x27;</span>)</span><br><span class="line">                            <span class="keyword">return</span></span><br><span class="line">                        &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>因为Dish实体类不满足接收flavor参数</strong>，即需要导入DishDto（dto/DishDto），用于封装页面提交的数据</p>
+<p>在<strong>DIshController.java</strong>中编写（<strong>由于使用了mybatis-plus，在DishService中继承了IService接口</strong>可以使用save方法）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> R&lt;String&gt; <span class="title function_">save</span><span class="params">(<span class="meta">@RequestBody</span> DishDto dishDto)</span> &#123;</span><br><span class="line">        log.info(<span class="string">&quot;新增菜品，dishDto: &#123;&#125;&quot;</span>, dishDto.toString());       <span class="comment">// Slf4j的日志输出</span></span><br><span class="line">        <span class="comment">// 保存菜品</span></span><br><span class="line">        dishService.saveWithFlavors(dishDto);   <span class="comment">// saveWithFlavors方法为非mybatis-plus提供的方法，用于同时保存菜品和菜品口味</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> R.success(<span class="string">&quot;新增菜品成功&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>再在<strong>DIshServiceImpl.java</strong>中具体实现菜品的管理</p>
+<p>然后<strong>分页构造器</strong>输出，在前端演示</p>
+<p><strong>交互过程</strong></p>
+<p>1、页面(backend/page/food/add.html)发送ajax请求，请求服务端获取菜品分类数据并展示到下拉框中<br>2、页面发送请求进行图片上传，请求服务端将图片保存到服务器<br>3、页面发送请求进行图片下载，将上传的图片进行回显<br>4、点击保存按钮，发送ajax请求，将菜品相关数据以json形式提交到服务端<br><strong>开发新增菜品功能，其实就是在服务端编写代码去处理前端页面发送的这4次请求即可。</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">LuoDashuai</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/">http://example.com/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">罗小帅的blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E9%AA%8C/">实验</a></div><div class="post_share"><div class="social-share" data-image="/img/hh.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/12/15/%E5%86%99%E7%BB%9920%E5%B2%81%E7%9A%84%E8%87%AA%E5%B7%B1/" title="写给20岁的自己"><img class="cover" src="/img/21.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">写给20岁的自己</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C/" title="嵌入式系统实验"><img class="cover" src="/img/555.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">嵌入式系统实验</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/06/08/Elevator/" title="Elevator"><img class="cover" src="/img/195888.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-08</div><div class="title">Elevator</div></div></a></div><div><a href="/2023/10/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C/" title="嵌入式系统实验"><img class="cover" src="/img/555.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-14</div><div class="title">嵌入式系统实验</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/666.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LuoDashuai</div><div class="author-info__description">如今这里是风和日丽</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/luodashuaishuai"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:313029836@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://s2.loli.net/2023/10/01/27jiTWnrU5QRxfl.jpg" target="_blank" title="WeChat"><i class="fa-solid fa-comment"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">见天地见自己见众生</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-number">1.</span> <span class="toc-text">需求分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A4%90%E5%8E%85%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">餐厅后端管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.1.</span> <span class="toc-text">1、登录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E7%99%BB%E5%87%BA"><span class="toc-number">1.1.2.</span> <span class="toc-text">2、登出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%EF%BC%88%E5%A2%9E%E5%8A%A0%EF%BC%8C%E5%88%A0%E9%99%A4%EF%BC%8C%E7%8A%B6%E6%80%81%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="toc-number">1.1.3.</span> <span class="toc-text">3、员工管理（增加，删除，状态修改）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E7%AE%A1%E7%90%86%E8%8F%9C%E5%8D%95"><span class="toc-number">1.1.4.</span> <span class="toc-text">4、管理菜单</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/03/12/LeedCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8F%AF%E7%BC%96%E8%BE%91%EF%BC%89/" title="LeedCode刷题笔记"><img src="/img/b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LeedCode刷题笔记"/></a><div class="content"><a class="title" href="/2024/03/12/LeedCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8F%AF%E7%BC%96%E8%BE%91%EF%BC%89/" title="LeedCode刷题笔记">LeedCode刷题笔记</a><time datetime="2024-03-12T11:00:16.000Z" title="发表于 2024-03-12 19:00:16">2024-03-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/15/%E5%86%99%E7%BB%9920%E5%B2%81%E7%9A%84%E8%87%AA%E5%B7%B1/" title="写给20岁的自己"><img src="/img/21.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="写给20岁的自己"/></a><div class="content"><a class="title" href="/2023/12/15/%E5%86%99%E7%BB%9920%E5%B2%81%E7%9A%84%E8%87%AA%E5%B7%B1/" title="写给20岁的自己">写给20岁的自己</a><time datetime="2023-12-15T13:41:02.000Z" title="发表于 2023-12-15 21:41:02">2023-12-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/" title="罗大帅餐厅Readme"><img src="/img/hh.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="罗大帅餐厅Readme"/></a><div class="content"><a class="title" href="/2023/12/15/%E7%BD%97%E5%A4%A7%E5%B8%85%E9%A4%90%E5%8E%85Readme/" title="罗大帅餐厅Readme">罗大帅餐厅Readme</a><time datetime="2023-12-15T13:39:29.000Z" title="发表于 2023-12-15 21:39:29">2023-12-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C/" title="嵌入式系统实验"><img src="/img/555.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="嵌入式系统实验"/></a><div class="content"><a class="title" href="/2023/10/14/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C/" title="嵌入式系统实验">嵌入式系统实验</a><time datetime="2023-10-14T12:51:31.000Z" title="发表于 2023-10-14 20:51:31">2023-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/26/MySQL%E5%AD%A6%E4%B9%A0/" title="MySQL学习"><img src="/img/F4um7OQWUAA0ufn.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL学习"/></a><div class="content"><a class="title" href="/2023/09/26/MySQL%E5%AD%A6%E4%B9%A0/" title="MySQL学习">MySQL学习</a><time datetime="2023-09-26T09:03:25.000Z" title="发表于 2023-09-26 17:03:25">2023-09-26</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/hh.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By LuoDashuai</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
